@@ -1,0 +1,120 @@
+#include<stdio.h>
+#include <iostream>
+#include <string.h>
+#define DIM 20          
+using namespace std;
+/*
+* programma a quiz.
+*/
+
+int main()
+
+{
+	printf("--------------------\n");
+	printf("Questo e' un quiz sul corso epicode\n");
+	printf("--------------------\n");       
+	                         
+
+
+   int x;
+   char nome[DIM+1]; 
+    int punteggio; //variabile che conta le risposte esatte
+    int errori;  //variabile che conta le risposte sbagliate
+    errori = 0;
+    
+    punteggio = 0;
+    int risposta =0;
+    
+       
+      
+       
+       printf ("inserisci nome: \n");
+       scanf ("%s",&nome);
+    
+    
+   
+ {
+ 
+    printf("Domanda numero1");
+    printf("\n\nquanti mesi dura il corso?");
+    printf("\n\n\t1) 3 \t2) 8 \n\t3) 10 \t4) 3anni");
+    do
+    {
+    	printf("\n\nInserisci il numero da uno a 4:  ");
+    	scanf("%d",&risposta);
+    	if(risposta < 1 || risposta > 4)
+    	{
+    		printf("errore");
+		}
+		else{
+		} 
+	}
+	while(risposta <1 || risposta > 4);
+	if(risposta ==1)
+	
+ {       punteggio++;
+	                 
+	}else
+	
+	{	errori++;
+		       
+	
+	}    printf("Domanda numero 2");
+    printf("\n\nQuanto costa il corso?");                      
+    printf("\n\nt1) 400\t2) 7000\n\t3) 4750\t4) 5000");; ; 
+    do
+    {
+    	printf("\n\nInserisci il numero da uno a 4:  ");
+    	scanf("%d",&risposta);
+    	if(risposta < 1 || risposta > 4)
+    	{
+    		printf("errore");
+		
+		}else
+	     {
+		}   
+	}
+	while(risposta <1 || risposta > 4);
+	if(risposta ==3)
+	
+ {      
+    punteggio++;
+	         
+	}else
+	
+	{	errori++;
+		        
+ 
+ }   printf("Domanda numero 3");
+    printf("\n\nQuanti siamo nello nostra classe?");
+    printf("\n\t1)  15\t2)35\n\nt3) 45\t4)40");
+    do
+    {
+    	printf("\n\nInserisci il numero da 1 a 4: ");
+    	scanf("%d" ,&risposta);
+    	if(risposta < 1 || risposta > 4)
+    	
+    	{	printf("errore");
+		
+		}else
+		    { 
+		}  
+	}
+	while(risposta <1 || risposta > 4);
+	if(risposta == 4)
+	
+        punteggio++;
+	                 
+	else
+	
+		errori++;
+		    
+	
+}
+    printf(" nome %s\n", nome) ;
+	printf("Il tuo punteggio e'  %d\n", punteggio) ;
+	printf("Hai fatto %d errori\n", errori) ;
+	
+	getchar();
+	
+}
